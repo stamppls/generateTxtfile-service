@@ -1,7 +1,7 @@
 const os = require('os'); os.EOL
 
-const data = "";
-const bank;
+let data = "";
+let bank;
 
 modifyTxtfile = (fields) => {
     const dataRow = "";
