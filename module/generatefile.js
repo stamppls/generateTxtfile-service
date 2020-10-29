@@ -1,10 +1,10 @@
-var os = require('os'); os.EOL
+const os = require('os'); os.EOL
 
-let data = "";
-let bank;
+const data = "";
+const bank;
 
 modifyTxtfile = (fields) => {
-    let dataRow = "";
+    const dataRow = "";
     fields.forEach(field => {
         switch (field.fieldtype) {
             case "char":
