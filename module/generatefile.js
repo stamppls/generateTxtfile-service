@@ -3,8 +3,8 @@ const os = require('os'); os.EOL
 let data = "";
 let bank;
 
-modifyTxtfile = (fields) => {
-    const dataRow = "";
+const modifyTxtfile = (fields) => {
+    let dataRow = "";
     fields.forEach(field => {
         switch (field.fieldtype) {
             case "char":
@@ -29,7 +29,7 @@ modifyTxtfile = (fields) => {
     data += dataRow + "\r\n";
 }
 
-editTxtfile = () => {
+const editTxtfile = () => {
     bank.rows.forEach(row => {
         switch (row.rowtype) {
             case "header":
